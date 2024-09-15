@@ -1,0 +1,155 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Веты Боголюбской</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body style="font-family:georgia; font-size:15pt">
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color:ForestGreen; ">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" style="color:LightYellow;" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2024/index.html" style="color:LightYellow;">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2024/baling_2024_lat4.html" style="color:LightYellow;">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-image: url(https://raw.githubusercontent.com/lizaveta-b/lingdata/main/mywebpage/background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-3">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1 style="color:DarkGreen;">Вета Боголюбская</h1>
+						<hr style="border: 2px solid OliveDrab; "> <!-- это горизонтальная линия -->
+						<p style="color:DarkGreen;"><b>Счастье</b> <i>можно найти даже в</i> <b>самые темные времена.</b> <i>Просто не забывайте</i> <b>зажечь свет.</b></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://raw.githubusercontent.com/lizaveta-b/lingdata/main/mywebpage/myphoto1.jpg" style="height:300px; margin:40px 40px 40px 40px; border: 5px solid LightYellow; " >
+					</div>
+					<div class="col-md-4">
+					<img src="https://raw.githubusercontent.com/lizaveta-b/lingdata/main/mywebpage/myphoto2.jpg" style="height:300px; margin:40px 40px 40px 40px; border: 5px solid LightYellow; " >
+					</div>
+				</div>
+			</div>
+		</header>
+<hr style=" height: 3 px; border: 2px dashed OliveDrab; ">
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio" style="background-color:LightYellow; ">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3 style="color:OliveDrab;">Место учебы</h3>
+						<p style="color:DarkGreen;">Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3 style="color:OliveDrab;">Родной город</h3>
+						<p style="color:DarkGreen;">Челябинск</p>
+					</article>
+					<article>
+						<h3 style="color:OliveDrab;">Школа</h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<ul style="color:DarkGreen;">
+						<li>1-9 класс - Лицей №97, физико-математический профиль</li>
+						<li>10-11 класс - Многопрофильный лицей №148, социально-гуманитарный профиль</li>
+						</ul>
+						<hr style="border: 1px solid OliveDrab; ">
+					</article>
+				</div>
+
+				<div class="col-md-8">
+					<article>
+						<h2 style="color:OliveDrab;">Немного обо мне</h2>
+						<hr style="border: 1px solid OliveDrab; ">
+						<p style="color:DarkGreen;">Я очень ответственный, любознательный, открытый и жизнерадостный человек. Не люблю сидеть без дела и постоянно изучаю что-нибудь новое. Сейчас мне в этом очень помогает учёба на ФиКЛе:) <br>
+						<br>
+						Лингвистикой я заинтересовалась ещё в 9 классе, когда начала готовиться к олимпиадам, примерно тогда же решила, что буду поступать в вышку. Пока что у меня нет конкретной сферы, в которой я планирую развиваться, мне интересно всё, особенно детская речь и социолнгвистика. Но надеюсь в ближайшие 4 года всё-таки выбрать свой путь<br>
+						<br>
+						Помимо учёбы я занимаюсь преподаванием на онлайн-курсах, помогаю школьникам готовиться к олимпиадам по русскому языку и лингвистике. Мне очень нравится делиться с ними своим опытом и знаниями, видеть их заинтересованность и жажду к новым знаниям! <br>
+		                </p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<h3 style="color:OliveDrab;">Мои соцсети и контакты</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul style="color:DarkGreen;">
+						<li>VK: <a href="https://vk.com/liza_veta_b">@liza_veta_b</a></li>
+						<li>Telegram: <a href="https://t.me/liza_veta_b">@liza_veta_b</a></li>
+						<li>Github: <a href="https://github.com/lizaveta-b">@lizaveta-b</a></li>
+						<li>Корпоративная почта: <a href="mailto:eabogoliubskaia@edu.hse.ru">eabogoliubskaia@edu.hse.ru</a></li>
+						<li>Личная почта: <a href="mailto:elizaveta.bogolyubskaya@yandex.ru">elizaveta.bogolyubskaya@yandex.ru</a></li>
+						<li>Телефон: +79821058545</li>
+					</ul>
+					<img src="https://raw.githubusercontent.com/lizaveta-b/lingdata/main/mywebpage/myphoto3.jpg" style="height:250px; margin:40px 40px 40px 40px; border: 5px solid OliveDrab;">
+				</div>
+				<div class="col-md-8">
+					<article>
+					<h2 style="color:OliveDrab;">Мои хобби</h2>
+					<hr style="border: 1px solid OliveDrab; ">
+					<ul style="color:DarkGreen;">
+					<li><b>Вязание крючком</b><br>
+					Увлеклась им в середине 11 класса. Обожаю вязать одежду декор для дома! И очень хочу связать мягкую игрушку:)</li>
+					<li><b>Рисование акварелью</b><br>
+					Создаю открытки к праздникам или сохраняю в них самые теплые воспонимания</li>
+					<li><b>Игра на гитаре</b><br>
+					Окончила музыкальную школу по классу гитары, после чего забросила инструмент почти на год. Сейчас иногда играю любимые песни и пою</li>
+					<li><b>Йога</b><br>
+					Должно же быть в жизни хоть какое-то движение:)</li>
+					<li><b>Чтение научно-популярных книг</b><br>
+					Помимо лингвистики интересуюсь антропологией и фольклором</li>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; color:OliveDrab; ">&copy; В. Боголюбская, 2024</p> 
+			</div>
+		</footer>
+	</body>
+</html>
